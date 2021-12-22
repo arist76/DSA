@@ -13,22 +13,19 @@ import sys
 #
 
 def countSwaps(a):
-    first_num = min(a)
-    last_num = max(a)
-    swap_count = 0
     for each in range(len(a)):
         for every in range(len(a)-1):
             if a[every] > a[every + 1]:
                 a[every], a[every + 1] = a[every + 1], a[every]
                 swap_count += 1
-    
+
     print(f'Array is sorted in {swap_count} swaps.')
     print(f'First Element: {first_num}')
     print(f'Last Element: {last_num}')
-    
-    
-    
-                
+
+
+
+
 if __name__ == '__main__':
     n = int(input().strip())
 
