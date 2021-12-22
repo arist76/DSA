@@ -13,6 +13,9 @@ import sys
 #
 
 def countSwaps(a):
+    first_num = min(a)
+    last_num = max(a)
+    swap_count = 0
     for each in range(len(a)):
         for every in range(len(a)-1):
             if a[every] > a[every + 1]:
