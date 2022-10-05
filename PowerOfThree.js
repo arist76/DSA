@@ -3,12 +3,11 @@ var isPowerOfThree = function(n) {
         return true
     
     let ans = n / 3
-    console.log(ans)
-    if (ans == 3) {
+    if (ans == 3)
         return true
-    } else if (ans > 3) {
+    else if (ans > 3)
         return isPowerOfThree(ans)
-    } else {
+    else
         return false
-    }
+
 };
